@@ -1,1 +1,3 @@
-# Aadit-Ambadkar.github.io
+# aadit-ambadkar
+
+A personal website/blog

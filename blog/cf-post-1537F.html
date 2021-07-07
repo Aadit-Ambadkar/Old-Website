@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="footerVal" href="footer.html"> 
+    <link rel="stylesheet" href="css/code.css">
+
+    <!--- My Scripts -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+    MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<div w3-include-html="hidden/nav.html"></div>
+
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div w3-include-html="hidden/header.html"></div>
+
+            <section class="main">
+                <div class="post">
+                    <div class="post-header index">
+                        <h1 class="title">Code Forces 1573 Problem F</h1>
+                        <h3 class="title">Figure Fixing</h3>
+                        <div class="post-info">
+                            <span class="date">June 28, 2021</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2>Analysis</h2>
+                        <p>This problem is not difficult once some observations are made.</p>
+                        <ol>
+                            <strong><i><li>The sum of the target values must have the same parity as that of the initial values.</li></i></strong>
+                            This is because the values are updated 2 at a time, ie the parity remains the same.
+                            <strong><i><li>If&nbsp; <span style="font-style: normal;">(1)</span> is satisfied, and the graph is not bipartite, there always exists a solution.</li></i></strong>
+                            This is because we can cyclically update the values. Color the graph bipartite, with some number of adjacent colors. 
+                            Then we can make the sums of the values equal.
+                            <strong><i><li>If&nbsp; <span style="font-style: normal;">(1)</span> is satisfied, and the graph is bipartite, then a solution exists if and only if the sum of the differences between the target and the initial values of each parity is the same.</li></i></strong>
+                        </ol>
+                        <h2>Time Complexity: $\mathcal{O}(N+M)$</h2>
+                        <h3>Reason: BFS to check if the graph is bipartite</h3>
+                        <h2>Code: </h2>
+                        <script src="https://gist.github.com/Aadit-Ambadkar/6098a7b7ed42c47cd45d0b2b18f6e53f.js"></script>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="push"></div>
+
+<div w3-include-html="hidden/footer.html"></div>
+
+<script>
+    w3IncludeHTML();
+</script>
+
+<!-- jQuery first, then Bootstrap JS. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+# Logo (Font Awesome Class)
+fa_logo: fa-cube
+
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about.html
+  Tags: /tags
+  Categories: /categories
+  Contact: /contact.html
+
+# Default post title
+default_post_title: Untitled
+
+# Archive Date Format
+archive_date_format: MMM YYYY
+
+# Comments.
+comments:
+  # Disqus comments
+  disqus_shortname:
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Social Accounts
+github_url: https://github.com/Aadit-Ambadkar
+email_url: aadit.ambadkar@gmail.com
+youtube_url: https://www.youtube.com/channel/UCm2rP74Tg-GCryCcPKFDYeQ
+
+# Footer About Text
+footer_about: "This website was made by Aadit Ambadkar. Powered by <a href=\"https://hexo.io/\">Hexo</a> and themed by <a href=\"https://github.com/klugjo/hexo-theme-alpha-dust\">Alpha Dust</a>"
+
+# Footer Copyright Line
+footer_copyright: "@Untitled. All right reserved | Design & Hexo <a href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"
+
