@@ -29,7 +29,17 @@
 <div class="bg-gradient"></div>
 <div class="bg-pattern"></div>
 
-<div w3-include-html="hidden/nav.html"></div>
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">Projects</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="https://github.com/Aadit-Ambadkar" target="_blank">GitHub</a></li>
+            <li class="menu-item"><a href="mailto:aadit.ambadkar@gmail.com" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+</div>
 
 <nav>
     <a href="#menu"></a>
@@ -38,7 +48,13 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <div w3-include-html="hidden/header.html"></div>
+            <header>
+                <div class="logo">
+                    <i class="logo-icon fa fa-file-code-o" aria-hidden="true"></i>
+                    <h1 id="main-title" class="title"><a href="index.html" class="nounderline">Aadit Ambadkar</a></h1>
+                    <h2 id="sub-title" class="subtitle">Techlete, Mathlete, and Climbing Enthusiast</h2>
+                </div>
+            </header>
 
             <section class="main">
                 <div class="post">
@@ -68,7 +84,52 @@
 
 <div class="push"></div>
 
-<div w3-include-html="hidden/footer.html"></div>
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This website was made by Aadit Ambadkar. Themed by <a href="https://github.com/klugjo/hexo-theme-alpha-dust">Alpha Dust</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Aadit-Ambadkar" target="_blank">
+                                <span class="footer-icon-container">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:aadit.ambadkar@gmail.com" target="_blank">
+                                <span class="footer-icon-container">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/channel/UCm2rP74Tg-GCryCcPKFDYeQ" target="_blank">
+                                <span class="footer-icon-container">
+                                    <i class="fa fa-youtube"></i>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    © Aadit Ambadkar 2021. All rights reserved | Design by <a href="#">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script>
     w3IncludeHTML();

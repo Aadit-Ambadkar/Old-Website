@@ -29,7 +29,17 @@
 <div class="bg-gradient"></div>
 <div class="bg-pattern"></div>
 
-<div w3-include-html="hidden/nav.html"></div>
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="#">Projects</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="https://github.com/Aadit-Ambadkar" target="_blank">GitHub</a></li>
+            <li class="menu-item"><a href="mailto:aadit.ambadkar@gmail.com" target="_blank">Contact</a></li>
+        </ul>
+    </div>
+</div>
 
 <nav>
     <a href="#menu"></a>
@@ -38,9 +48,36 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <div w3-include-html="hidden/header.html"></div>
+            <header>
+                <div class="logo">
+                    <i class="logo-icon fa fa-file-code-o" aria-hidden="true"></i>
+                    <h1 id="main-title" class="title"><a href="index.html" class="nounderline">Aadit Ambadkar</a></h1>
+                    <h2 id="sub-title" class="subtitle">Techlete, Mathlete, and Climbing Enthusiast</h2>
+                </div>
+            </header>
 
             <section class="main">
+                <div class="post">
+                    <div class="post-header index">
+                        <h1 class="title"><a href="cf-post-1537F.html" class="nounderline">Code Forces 1573 Problem F</a></h1>
+                        <h3 class="title">Figure Fixing</h3>
+                        <div class="post-info">
+                            <span class="date">July 7, 2021</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>This problem is not difficult once some observations are made.</p>
+                        <ol>
+                            <strong><i><li>The sum of the target values must have the same parity as that of the initial values.</li></i></strong>
+                            This is because the values are updated 2 at a time, ie the parity remains the same.
+                            <strong><i><li>If&nbsp; <span style="font-style: normal;">(1)</span> is satisfied, and the graph is not bipartite, there always exists a solution.</li></i></strong>
+                            This is because we can cyclically update the values. Color the graph bipartite, with some number of adjacent colors. 
+                            Then we can make the sums of the values equal.
+                            <strong><i><li>If&nbsp; <span style="font-style: normal;">(1)</span> is satisfied, and the graph is bipartite, then a solution exists if and only if the sum of the differences between the target and the initial values of each parity is the same.</li></i></strong>
+                        </ol>
+                    </div>
+                    <a class="read-more" href="cf-post-1537F.html" class="nounderline">Read More</a>
+                </div>
                 <div class="post">
                     <div class="post-header index">
                         <h1 class="title"><a href="test-post-6-28-2021.html" class="nounderline">Test Post</a></h1>
@@ -62,7 +99,59 @@
 
 <div class="push"></div>
 
-<div w3-include-html="hidden/footer.html"></div>
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This website was made by Aadit Ambadkar. Themed by <a href="https://github.com/klugjo/hexo-theme-alpha-dust">Alpha Dust</a>
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a class="footer-post" href="cf-post-1537F.html">Code Forces 1573 Problem F</a></li>
+                    <li><a class="footer-post" href="test-post-6-28-2021.html">Test Post</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Aadit-Ambadkar" target="_blank">
+                                <span class="footer-icon-container">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:aadit.ambadkar@gmail.com" target="_blank">
+                                <span class="footer-icon-container">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com/channel/UCm2rP74Tg-GCryCcPKFDYeQ" target="_blank">
+                                <span class="footer-icon-container">
+                                    <i class="fa fa-youtube"></i>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    © Aadit Ambadkar 2021. All rights reserved | Design by <a href="#">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <script>
