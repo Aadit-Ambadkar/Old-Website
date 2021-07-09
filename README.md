@@ -2,4 +2,4 @@
 
 A personal website/blog
 
-Go to aadit-ambadkar.github.io/blog for the actual website
+Go to [aadit-ambadkar.github.io/blog](aadit-ambadkar.github.io/blog) for the actual website
