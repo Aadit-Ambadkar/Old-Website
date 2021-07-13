@@ -1,0 +1,24 @@
+@keyframes rotateinsquare {
+    0%   {background-color:#4285F4; transform: translate(0px, 0px) rotate(0deg) ;}
+    25%  {background-color:#EA4335; transform: translate(200px, 0px) rotate(90deg) ;}
+    50%  {background-color:#FBBC04; transform: translate(200px, 200px) rotate(180deg) ;}
+    75%  {background-color:#34A853; transform: translate(0px, 200px) rotate(270deg) ;}
+    100% {background-color:#4285F4; transform: translate(0px, 0px) rotate(360deg) ;}
+}
+
+#load {
+    width: 100px;
+    height: 100px;
+    animation-name: rotateinsquare;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.center {
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+}
