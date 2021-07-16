@@ -65,7 +65,6 @@ var alphaDust = function () {
     };
 }();
 
-
 $(document).ready(function () {
     alphaDust.initPostHeader();
     alphaDust.initMenu();

@@ -1,3 +1,5 @@
+/* ------------------------------------------- */
+
 @keyframes rotateinsquare {
     0%   {background-color:#4285F4; transform: translate(0px, 0px) rotate(0deg) ;}
     25%  {background-color:#EA4335; transform: translate(200px, 0px) rotate(90deg) ;}
@@ -22,3 +24,40 @@
     top: 50%;
     transform: translateY(100%);
 }
+
+/* ------------------------------------------- */
+
+/**
+ * A3D897 Light Green
+ * 51A63D Green
+ * A88FAC Light Purple
+ * 66B3BA Light Blue
+ * 7B287D Darker Purple
+**/
+
+/* body {
+    background-color: #A3D897;
+}
+
+.contents {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contents p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contents a {
+    text-decoration: none;
+    border-bottom: 2px dotted #A88FAC;
+    transition: border-bottom 0.5s;
+}
+
+.contents a:visited {
+    color: black;
+}
+
+.contents a:hover {
+    border-bottom: 2px solid #A88FAC;
+} */

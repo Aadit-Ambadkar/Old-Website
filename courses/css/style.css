@@ -1,0 +1,47 @@
+/**
+ * A3D897 Light Green
+ * 51A63D Green
+ * A88FAC Light Purple
+ * 66B3BA Light Blue
+ * 7B287D Darker Purple
+**/
+
+
+body {
+    background-color: #A3D897;
+}
+
+.contents {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contents .title {
+    background-image: url(../media/banner.jpg);
+    background-size: cover;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.contents p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contents a {
+    text-decoration: none;
+    border-bottom: 2px solid #50a63d;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 0.25s;
+}
+
+.contents a:visited {
+    color: black;
+}
+
+.contents a:hover {
+    background-color: #50a63d6c;
+}
