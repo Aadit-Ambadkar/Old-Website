@@ -1,122 +1,130 @@
-/**
- * Code block style by Avi Aryan
- * Modified by Aadit Ambadkar
- */
+body .gist .highlight {
+    background: #293134;
+}
+body .gist .blob-num,
+body .gist .blob-code-inner,
+body .gist .pl-ent,
+body .gist .pl-s1,
+body .gist .pl-s1 .pl-s2,
+body .gist .pl-smi,
+body .gist .pl-smp,
+body .gist .pl-stj,
+body .gist .pl-vo,
+body .gist .pl-vpf {
+    color: #e0e2e4;
+}
+body .gist .pl-c,
+body .gist .pl-c span {
+    color: #66747b;
+    font-style: italic;
+}
+body .gist .pl-mb {
+    color: #ec7600;
+    font-weight: 700;
+}
+body .gist .pl-mh .pl-en {
+    color: #66747b;
+    font-weight: 700;
+}
+body .gist .pl-mi {
+    color: #93c763;
+    font-style: italic;
+}
+body .gist .pl-sc {
+    color: #96989a;
+}
+body .gist .pl-st {
+    color: #da4236;
+}
+body .gist .pl-c1>.pl-c1 {
+    color: #678cb1;
+}
+body .gist .pl-c1,
+body .gist .pl-sr .pl-cce {
+    color: #ffcd22;
+}
+body .gist .pl-e,
+body .gist .pl-k,
+body .gist .pl-mdh,
+body .gist .pl-mdr,
+body .gist .pl-ml,
+body .gist .pl-mm,
+body .gist .pl-mo,
+body .gist .pl-mp,
+body .gist .pl-mr,
+body .gist .pl-ms,
+body .gist .pl-s1 .pl-v,
+body .gist .pl-s3 {
+    color: #93c763;
+}
+body .gist .pl-en,
+body .gist .pl-v {
+    color: #678cb1;
+}
+body .gist .pl-mh,
+body .gist .pl-mq {
+    color: #66747b;
+}
+body .gist .pl-pds,
+body .gist .pl-s,
+body .gist .pl-s1 .pl-pse .pl-s2,
+body .gist .pl-sv {
+    color: #ec7600;
+}
+body .gist .pl-sr,
+body .gist .pl-sr .pl-sra,
+body .gist .pl-sr .pl-sre,
+body .gist .pl-src {
+    color: #d39745;
+}
+body .gist .pl-mi1,
+body .gist .pl-mdht {
+    color: #e0e2e4;
+    background: rgba(0, 64, 0, .5);
+}
+body .gist .pl-md,
+body .gist .pl-mdhf,
+body .gist .pl-id,
+body .gist .pl-ii {
+    color: #e0e2e4;
+    background: rgba(64, 0, 0, .5);
+}
 
- code[class*="language-"],
- pre[class*="language-"] {
-     color: #393A34;
-     font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-     direction: ltr;
-     text-align: left;
-     white-space: pre;
-     word-spacing: normal;
-     word-break: normal;
-     font-size: 0.95em;
-     line-height: 1.2em;
- 
-     -moz-tab-size: 4;
-     -o-tab-size: 4;
-     tab-size: 4;
- 
-     -webkit-hyphens: none;
-     -moz-hyphens: none;
-     -ms-hyphens: none;
-     hyphens: none;
- }
- 
- pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
- code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-     background: #b3d4fc;
- }
- 
- pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
- code[class*="language-"]::selection, code[class*="language-"] ::selection {
-     background: #b3d4fc;
- }
- 
- /* Code blocks */
- pre[class*="language-"] {
-     padding: 1em;
-     margin: .5em 0;
-     overflow: auto;
-     border: 1px solid #dddddd;
-     background-color: white;
- }
- 
- :not(pre) > code[class*="language-"],
- pre[class*="language-"] {
- }
- 
- /* Inline code */
- :not(pre) > code[class*="language-"] {
-     padding: .2em;
-     padding-top: 1px; padding-bottom: 1px;
-     background: #f8f8f8;
-     border: 1px solid #dddddd;
- }
- 
- .token.comment,
- .token.prolog,
- .token.doctype,
- .token.cdata {
-     color: #999988; font-style: italic;
- }
- 
- .token.namespace {
-     opacity: .7;
- }
- 
- .token.string,
- .token.attr-value {
-     color: #F06C9B;
- }
- .token.punctuation,
- .token.operator {
-     color: #393A34; /* no highlight */
- }
- 
- .token.entity,
- .token.url,
- .token.symbol,
- .token.number,
- .token.boolean,
- .token.variable,
- .token.constant,
- .token.regex,
- .token.inserted {
-     color: #36acaa;
- }
- .token.property {
-   text-decoration: none;
-   color: #C03221;
- }
- 
- .token.atrule,
- .token.keyword,
- .token.attr-name,
- .language-autohotkey .token.selector {
-     color: #00a4db;
- }
- 
- .token.function,
- .token.deleted,
- .language-autohotkey .token.tag {
-     color: #9a050f;
- }
- 
- .token.tag,
- .token.selector,
- .language-autohotkey .token.keyword {
-     color: #00009f;
- }
- 
- .token.important,
- .token.function,
- .token.bold {
-     font-weight: bold;
- }
- 
- .token.italic {
-     font-style: italic;
- }
+body .gist {
+    background-color: transparent !important;
+}
+
+body .gist tr:first-child td {
+    border: none !important;
+}
+body .gist tr:last-child td {
+    border: none o !important;
+}
+
+body .gist .gist-file {
+    border: none;
+}
+body .gist .gist-data {
+    border-color: none !important;
+    border-bottom: none;
+    background-color: #293134;
+}
+body .gist  .blob-code-inner{
+    border: none !important;
+}
+body .gist .blob-code {
+    border: none !important;
+    
+}
+section.main .post .content table tbody tr {
+    border: solid 0px #fff !important;
+}
+
+body .gist .gist-meta {
+    background-color: #293134;
+    color: #e0e2e4 !important;
+}
+
+body .gist .gist-meta a {
+    color: #e0e2e4 !important;
+}

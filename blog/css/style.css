@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron:500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 body {
   background: #0f1516;
   font-family: 'Open Sans', sans-serif;
@@ -63,6 +64,9 @@ a:hover {
   border-bottom: 1px dotted transparent;
   text-decoration: none;
 }
+h2 a {
+  border-bottom: 3px solid #d7ecff;
+}
 /* No underline for a tags specifically */
 .nounderline {
   border-bottom: 1px dotted transparent !important;
@@ -112,6 +116,28 @@ header .logo .subtitle {
   color: #d7ecff;
   font-family: "Orbitron", sans-serif;
   text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 15px #228dff;
+}
+
+@keyframes blink {
+  from {
+    color: #d7ecff;
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 15px #228dff;
+  }
+  to {
+    color: transparent;
+    text-shadow: none;
+  }
+}
+
+header .logo .subtitle::after {
+  content: "|";
+  color: #d7ecff;
+  text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 15px #228dff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
 }
 section.main {
   color: #d7ecff;

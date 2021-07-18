@@ -69,3 +69,60 @@ $(document).ready(function () {
     alphaDust.initPostHeader();
     alphaDust.initMenu();
 });
+
+var list = document.getElementsByClassName("subtitle");
+for (var item of list) {
+    item.innerHTML = "I'm ";
+}
+var i = 0;
+var j = 0;
+var txt = [
+    'a mathlete', 
+    'a competitive programmer', 
+    'a website developer', 
+    'a nature enthusiast', 
+    'an ml wannabe', 
+    'a (retired) swimmer', 
+    'a tech junkie', 
+    'a youtuber',
+    'an aime qualifier',
+    'a math competition coordinator',
+    'an enthusiastic person',
+    'a digital artist',
+    'Aadit Ambadkar'
+];
+var speed = 80;
+var wait = 2000;
+var wait2 = 600;
+addChar();
+
+function addChar() {
+  if (i < txt[j].length) {
+    for (var item of list) {
+      item.innerHTML += txt[j].charAt(i);
+    }
+    i++;
+    setTimeout(function () {addChar();}, speed);
+  } else {
+    i=0;
+    speed=70;
+    setTimeout(function () {removeChar();}, wait);
+  }
+}
+
+function removeChar() {
+  if (i < txt[j].length) {
+    for (var item of list) {
+      item.innerHTML = item.innerHTML.substring(0, item.innerHTML.length-1);
+    }
+    i++;
+    setTimeout(function () {removeChar();}, speed);
+  } else {
+    i=0;
+    j++;
+    j%=txt.length;
+    speed=80;
+    setTimeout(function () {addChar();}, wait2);
+    
+  }
+}
