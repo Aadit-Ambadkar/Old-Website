@@ -67,21 +67,14 @@
                         </div>
                     </div>
                     <div class="content">
+                        <p><b>This problem was coded in a custom language I built called <i>TEN</i>. You can find more about it in my <a href="https://github.com/Aadit-Ambadkar" target="_blank" ref="noopener noreferrer">GitHub</a>, or through <a href="https://github.com/Aadit-Ambadkar/TEN-Programming-Language" target="_blank" ref="noopener noreferrer">this link</a></b></p>
                         <p>Problem statement: <a target="_blank" href="https://codeforces.com/problemset/problem/4/A">Watermelon</a></p>
                         <h2>Analysis</h2>
-                        <p>This problem is not difficult once some observations are made.</p>
-                        <ol>
-                            <strong><i><li>The sum of the target values must have the same parity as that of the initial values.</li></i></strong>
-                            This is because the values are updated 2 at a time, ie the parity remains the same.
-                            <strong><i><li>If&nbsp; <span style="font-style: normal;">(1)</span> is satisfied, and the graph is not bipartite, there always exists a solution.</li></i></strong>
-                            This is because we can cyclically update the values. Color the graph bipartite, with some number of adjacent colors. 
-                            Then we can make the sums of the values equal.
-                            <strong><i><li>If&nbsp; <span style="font-style: normal;">(1)</span> is satisfied, and the graph is bipartite, then a solution exists if and only if the sum of the differences between the target and the initial values of each parity is the same.</li></i></strong>
-                        </ol>
-                        <h2>Time Complexity: $\mathcal{O}(N+M)$</h2>
-                        <h3>Reason: BFS to check if the graph is bipartite</h3>
+                        <p>If the number is even, and is not 2, then the answer is yes. Otherwise, it is no.</p>
+                        <h2>Time Complexity: $\mathcal{O}(1)$</h2>
+                        <h3>Reason: Everything is in Linear Time</h3>
                         <h2>Code: </h2>
-                        <script src="https://gist.github.com/Aadit-Ambadkar/6098a7b7ed42c47cd45d0b2b18f6e53f.js"></script>
+                        <script src="https://gist.github.com/Aadit-Ambadkar/122e6fece33f66400107c6f054adcd8d.js"></script>
                     </div>
                 </div>
             </section>
