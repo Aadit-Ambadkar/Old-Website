@@ -122,6 +122,9 @@ a {
 a.nostyle {
     border-bottom: 0px solid #50a63d;
     transition: none;
+    background-image: none;
+    background-size:  0 0;
+    background-repeat: no-repeat;
 }
 
 a:visited {
@@ -132,7 +135,7 @@ a:hover {
     background-size: 100% 100%;
 }
 a.nostyle:hover {
-    background-color: transparent;
+    background-size: 0% 0%;
 }
 
 body div.boxed {
